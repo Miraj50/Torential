@@ -269,7 +269,7 @@ function DownloadMovie(){
         log("Downloading " + chalk.cyanBright(MovieToDownload.name+", "+MovieToDownload.quality));
 
         var magnetURI = "magnet:?xt=urn:btih:"+MovieToDownload.hash;
-        var torrent = TorrentClient.add(magnetURI, {path: '.\\Desktop\\'});
+        var torrent = TorrentClient.add(magnetURI, {path: '.'});
 
         var progressBar = new SingleBar({
             barCompleteChar: '\u2588',
@@ -343,8 +343,3 @@ const Torrential = async () => {
 };
   
 Torrential();
-
-// Playdate with Destiny (2020) 47.22 MB
-// The Longest Daycare (2012) 44.48 MB
-// The Force Awakens from Its Nap (2021) 33.36 MB
-// Presentation, or Charlotte and Her Steak (1960) 13.39 MB
