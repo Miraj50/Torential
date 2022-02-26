@@ -1,24 +1,36 @@
 {
   "name": "torential",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "It's raining movies today!",
+  "keywords": [
+    "movie",
+    "torrent",
+    "peer",
+    "download"
+  ],
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: No Test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Miraj50/Torential.git"
+  },
   "author": "Rishabh Raj",
-  "license": "ISC",
+  "license": "MIT",
   "bin": {
-    "torr": "index.js"
+    "torential": "index.js"
   },
   "dependencies": {
+    "axios": "^0.26.0",
     "boxen": "^6.2.1",
     "chalk": "^5.0.0",
     "cli-progress": "^3.9.1",
     "cli-table": "^0.3.9",
     "figlet": "^1.5.2",
+    "lodash": "^4.17.21",
     "progress": "^2.0.3",
-    "axios": "^0.26.0"
+    "webtorrent": "^1.8.3"
   }
 }
