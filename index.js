@@ -32,7 +32,7 @@ const prompt = (query) => new Promise((resolve) => rl.question(query, resolve));
 
 const greetMsg = chalk.white.bold(
     figlet.textSync("Torential", {
-        font: "small",
+        font: "Small",
         horizontalLayout: "fitted"
     })
 );
